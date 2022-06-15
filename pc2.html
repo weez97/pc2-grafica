@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cubes everywhere | Computer graphics</title>
+		<link href="css/style.css" rel="stylesheet">
+		<style>
+			#inputs {
+				position: relative;
+			}
+			#inputs label {
+				position: absolute;
+				top: 0;
+				left: 0;
+				border: none;
+				background: none;
+				color: #fff;
+			}
+			input {
+				display: block;
+				width: 250px;
+			}
+            em {
+                color: white;
+                font-weight: bold;
+                font-style: normal;
+                font-family:'Courier New', Courier, monospace;
+            }
+		</style>
+	</head>
+	<body>
+		<div id="inputs">
+			<canvas id="canvitas"></canvas>
+			<label>
+				<em>Ambient light intensity</em>
+				<input type="range" id="ambient" value="0" min="0" max="100">
+				<em>Specular lamp custom color</em>
+				<input type="color" id="specLampColor" value ="#ffffff">
+				<em>Specular lamp intensity</em>
+				<input type="range" id="specIntensity" value="0" min="0" max="100">
+			</label>
+		</div>
+		<script type="module" src="js/pc2.js"></script>
+	</body>
+</html>
